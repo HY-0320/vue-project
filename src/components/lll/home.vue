@@ -34,26 +34,28 @@ export default {
   background-image: url("../../assets/homepage.png");
   width: 100%;
   height: 100%;
-  background-size: 100%;
   position: absolute;
-  top: 0%;
-  left: 0px;
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
 }
 h1 {
-  position: relative;
+  /* position: relative; */
   top: 300px;
   color: #fff;
 }
 .ul1 {
   list-style-type: none;
-  position: relative;
+  /* position: relative; */
   top: 100px;
   left: -600px;
   color: #fff;
 }
 .ul2 {
   list-style-type: none;
-  position: relative;
+  /* position: relative; */
   top: 100px;
   left: 600px;
   color: #fff;
