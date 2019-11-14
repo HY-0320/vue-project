@@ -13,8 +13,9 @@
         <el-table-column prop="rank" label="获奖等级">
         </el-table-column>
         <el-table-column align="right" width="100">
-          <el-button size="mini" @click="toDetails()">详情</el-button>
-          <!-- <router-link to="/awardsDetails">详情</router-link>用路由进行页面跳转 -->
+          <!-- <el-button size="mini" @click="toDetails()">详情</el-button> -->
+          <router-link to="/awardsDetails">详情</router-link>
+          <!--用路由进行页面跳转-->
           <router-view />
         </el-table-column>
       </el-table>
