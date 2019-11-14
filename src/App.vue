@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import project from './views/project.vue'
+import project from './components/views/project.vue'
 // import details from './components/details.vue'
 // import awardsDetails from './components/awardsDetails.vue'
 

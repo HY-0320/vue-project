@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import awards from './views/awards.vue'
-import project from './views/project.vue'
-import details from './views/details.vue'
-import awardsDetails from './views/awardsDetails.vue'
+import awards from './components/views/awards.vue'
+import project from './components/views/project.vue'
+import details from './components/views/details.vue'
+import awardsDetails from './components/views/awardsDetails.vue'
 
 Vue.use(Router)
 

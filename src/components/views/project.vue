@@ -79,7 +79,7 @@ export default {
 </script>
 <style>
 body {
-  background: url("../assets/1.png");
+  background: url("../../assets/1.png");
 }
 h3 {
   right: 50%;
