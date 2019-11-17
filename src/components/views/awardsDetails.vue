@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1 class="passage-header" style="color:white">{{name}}</h1>
+    <h1 class="passage-header" style="color:white"></h1>
+    <input type="text" :value="this.$store.state.tableData[0].name">
   </div>
 </template>
 <script>

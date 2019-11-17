@@ -2,7 +2,7 @@
   <div>
     <el-form ref="form" :model="sizeForm" label-width="80px" size="mini">
       <el-form-item label="项目名称">
-        <el-input v-model="sizeForm.name"></el-input>
+        <el-input :value="this.$store.state.tableData[0].name"></el-input>
       </el-form-item>
       <el-form-item label="参与成员">
         <el-input v-model="sizeForm.members"></el-input>
