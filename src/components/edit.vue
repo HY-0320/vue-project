@@ -1,9 +1,19 @@
 <template>
-<div id="edit">
-    <router-link to="/">返回</router-link>
+
+<div id="check">
+    <h1><router-link to="/">返回</router-link></h1>
     <h1>这是编辑界面</h1>
+<div>
+  名称<input type="text" :value="this.$store.state.tableData.name"><br>
+  日期<input type="text" :value="this.$store.state.tableData.date"><br>
+  人员<input type="text" :value="this.$store.state.tableData.crew"><br>
+  地址<input type="text" :value="this.$store.state.tableData.address"><br>
+  详情<textarea name="" id="" cols="30" rows="10"></textarea>
+
+</div>
 </div>
 </template>
+
 
 <script>
 export default {
@@ -13,7 +23,9 @@ export default {
       
     };
   },
- 
+  methods:{
+
+  }
 };
 </script>
 
@@ -21,13 +33,9 @@ export default {
 #edit{
   height: 100%;
   width: 100%;
-  position: absolute;
-  background: url(../assets/background.png);
-  background-size: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -webkit-font-smoothing: antialiased;
+  position: fixed;
+  background: url("../assets/background.png");
+  color: aliceblue;
 
 }
 *{

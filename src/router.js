@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import activities from './components/activities.vue'
-import check from './components/check.vue'
+import add from './components/add.vue'
 import edit from './components/edit.vue'
-
+import check from './components/check.vue'
 
 Vue.use(Router)
 export default new Router({
@@ -16,14 +16,19 @@ export default new Router({
             component:activities
         },
         {
-            path:'/check',
-            name:'check',
-            component:check
+            path:'/add',
+            name:'add',
+            component:add
         },
         {
             path:'/edit',
             name:'edit',
             component:edit
+        },
+        {
+            path:'/check',
+            name:'check',
+            component:check
         },
     ]
 })
