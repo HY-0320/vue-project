@@ -3,12 +3,12 @@
 <div id="check">
     <h1><router-link to="/">返回</router-link></h1>
     <h1>这是查看界面</h1>
-<div>
-  名称<input type="text" :value="this.$store.state.tableData.name"><br>
-  日期<input type="text" :value="this.$store.state.tableData.date"><br>
-  人员<input type="text" :value="this.$store.state.tableData.crew"><br>
-  地址<input type="text" :value="this.$store.state.tableData.address"><br>
-  详情<textarea name="" id="" cols="30" rows="10"></textarea>
+<div class="table1"> 
+  名称:<input type="text" :value="this.$store.state.tableData.name" class="head"><br><br>
+  日期:<input type="text" :value="this.$store.state.tableData.date" class="head"><br><br>
+  人员:<input type="text" :value="this.$store.state.tableData.crew" class="head"><br><br>
+  地址:<input type="text" :value="this.$store.state.tableData.address" class="head"><br><br>
+  详情:<textarea name="" id="" cols="30" rows="10" class="head"></textarea>
 </div>
 </div>
 </template>
@@ -38,5 +38,14 @@ export default {
 *{
   margin: 0px;
   padding: 0px;
+}
+.table1{
+  position:fixed;
+  top: 25%;
+  right: 45%;
+}
+.head{
+  width: 200px;
+  font-size: 16px;
 }
 </style>

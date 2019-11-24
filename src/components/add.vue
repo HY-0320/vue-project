@@ -7,24 +7,26 @@
 
 <form v-on:submit="addactivities"></form>
 
+<div class="table3">
 <div>
-  <label class="" style="color:white">活动名称</label>
-  <input type="text" placeholder="name" v-model="activities.name">
+  <label class="" style="color:white">活动名称:</label><br>
+  <input type="text" placeholder="name" v-model="activities.name" class="head"><br><br>
 </div>
 <div>
-  <label style="color:white">活动时间</label>
-  <input type="text" placeholder="time" v-model="activities.time">
+  <label style="color:white">活动时间:</label><br>
+  <input type="text" placeholder="time" v-model="activities.time" class="head"><br><br>
 </div>
 <div>
-  <label style="color:white">活动人员</label>
-  <input type="text" placeholder="crew" v-model="activities.crew">
+  <label style="color:white">活动人员:</label><br>
+  <input type="text" placeholder="crew" v-model="activities.crew" class="head"><br><br>
 </div>
 <div>
-  <label style="color:white">活动地点</label>
-  <input type="text" placeholder="address" v-model="activities.address">
+  <label style="color:white">活动地点:</label><br>
+  <input type="text" placeholder="address" v-model="activities.address" class="head"><br><br>
 </div>
 
 <button @click="add"><router-link to="/">添加</router-link></button>
+</div>
 </div>
 
 </template>
@@ -48,7 +50,7 @@ export default {
       this.activities.push()
     },
     add(){
-      console.log('ok')
+      // console.log('ok')
     }
   }
  
@@ -70,5 +72,15 @@ export default {
 *{
   margin: 0px;
   padding: 0px;
+}
+.table3{
+  position:fixed;
+  top: 25%;
+  right: 45%;
+  
+}
+.head{
+  width: 200px;
+  font-size: 16px;
 }
 </style>
