@@ -1,17 +1,18 @@
 <template>
   <div>
+    <!-- <div>
+      名称<input type="text" :value="this.$store.state.tableData.name"><br>
+      日期<input type="text" :value="this.$store.state.tableData.member"><br>
+      人员<input type="text" :value="this.$store.state.tableData.data"><br>
+      地址<input type="text" :value="this.$store.state.tableData.progress"><br>
+      详情<textarea name="" id="" cols="30" rows="10"></textarea>
+    </div> -->
     <el-form ref="form" :model="sizeForm" label-width="80px" size="mini">
       <el-form-item label="项目名称">
-        <el-input :value="this.$store.state.tableData[0].name"></el-input>
+        <el-input :value="this.$store.state.tableData[3].name"></el-input>
       </el-form-item>
       <el-form-item label="参与成员">
-        <el-input v-model="sizeForm.members"></el-input>
-      </el-form-item>
-      <el-form-item label="活动区域">
-        <el-select v-model="sizeForm.region" placeholder="请选择活动区域">
-          <el-option label="区域一" value="shanghai"></el-option>
-          <el-option label="区域二" value="beijing"></el-option>
-        </el-select>
+        <el-input v-model="this.$store.state.tableData[0].member"></el-input>
       </el-form-item>
       <el-form-item label="项目开始时间">
         <el-col :span="11">
@@ -33,11 +34,11 @@
       <!-- <el-radio-group v-model="sizeForm.resource" size="medium">
           <el-radio border label="线上品牌商赞助"></el-radio>
           <el-radio border label="线下场地免费"></el-radio>
-        </el-radio-group> -->
-      <!-- </el-form-item> -->
+        </el-radio-group>
+      </el-form-item> -->
       <el-form-item size="large">
         <el-button type="primary" @click="onSubmit">立即创建</el-button>
-        <el-button>取消</el-button>
+        <el-button @click="toProject">取消</el-button>
       </el-form-item>
     </el-form>
     <div>
@@ -64,6 +65,10 @@ export default {
     };
   },
   methods: {
+    toProject () {
+      this.$router.push({ path: '/', quary: { name: this.name } })
+
+    },
     onSubmit () {
       console.log('submit!');
     }

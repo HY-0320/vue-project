@@ -1,6 +1,6 @@
 <template>
   <div>
-    <router-link to="/awards">获奖</router-link><!-- 用路由进行页面跳转 -->
+    <!-- 用路由进行页面跳转 -->
     <router-view />
   </div>
 </template>

@@ -12,7 +12,8 @@
         <el-table-column prop="progress" label="项目进展">
         </el-table-column>
         <el-table-column align="right" width="100">
-          <router-link to="/details">详情</router-link><!-- 用路由进行页面跳转 -->
+          <router-link to="/details">详情</router-link> <!-- 用路由进行页面跳转 -->
+          <!-- <el-button @click="toDetails">详情</el-button> -->
           <router-view />
         </el-table-column>
       </el-table>
@@ -67,11 +68,9 @@ export default {
 
   },
   methods: {
-    // toDetails () {
-    //   var that
-    //   that = this
-    //   that.$router.push('/details')
-    // },
+    toDetails () {
+      this.$router.push({ path: '/', quary: { name: this.name } })
+    },
 
   },
 }
